@@ -24,9 +24,9 @@ function RouteForm({ onRouteChange }) {
   };
 
   const generateRandomWaypoints = (start, duration) => {
-    const distancePerMinute = 0.08; // 1分あたり約0.08km (歩行速度約4.8km/h)
-    const totalDistance = (duration / 60) * 4.8; // 散歩の総距離（km）
-    const waypointsCount = 3; // ランダムなウェイポイントの数
+    const distancePerMinute = 0.08;
+    const totalDistance = duration * distancePerMinute;
+    const waypointsCount = 3;
     let waypoints = [];
 
     for (let i = 0; i < waypointsCount; i++) {
@@ -43,7 +43,7 @@ function RouteForm({ onRouteChange }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white p-6 rounded shadow-md w-80"
+      className="bg-white px-8 py-4 rounded-lg shadow-md w-80"
     >
       <div className="mb-4">
         <label
