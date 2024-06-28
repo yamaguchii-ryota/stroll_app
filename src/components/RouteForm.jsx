@@ -18,7 +18,6 @@ function RouteForm({ onRouteChange }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (position) {
-      // ランダムルート生成ロジック（仮）
       const waypoints = generateRandomWaypoints(position, duration);
       onRouteChange(position, waypoints, position);
     }
