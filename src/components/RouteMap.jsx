@@ -54,7 +54,7 @@ function RouteMap({ start, waypoints, end }) {
             options={{
               directions: response,
               polylineOptions: {
-                strokeColor: "#FF0000", // ルートの線の色を赤に変更
+                strokeColor: "#FF0000",
                 strokeOpacity: 0.8,
                 strokeWeight: 6,
               },
