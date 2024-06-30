@@ -31,7 +31,7 @@ function RouteMap({ start, waypoints, end }) {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCqqAzIviWTneECxKmdfFv1BGF-O5Uosgs">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={start || center}
